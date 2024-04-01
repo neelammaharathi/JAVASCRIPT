@@ -1,0 +1,2 @@
+# JAVASCRIPT
+basics of js

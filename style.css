@@ -1,0 +1,135 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Gilroy';
+}
+html,body{
+    height: 100%;
+    width:100%;
+}
+.main{
+   
+    display: flex;
+    height: 100vh;
+    position: relative;
+}
+.half{
+   flex:1; 
+   display:flex;
+   align-items: center;
+   flex-direction: column;
+}
+.left {
+/* background-color: blue; */
+flex-direction: column;
+background-color:lightgray;
+}
+/* .right{
+background-color: blueviolet;
+} */
+#title1{
+    width:100%;
+height:10%;
+/* background-color: brown; */
+padding-top: 60px;
+margin-bottom: 20px;
+
+}
+#title2{
+    width:100%;
+height:20%;
+/* background-color:pink; */
+padding-top: 60px;
+
+
+}
+#title3{
+    width:100%;
+height:25%;
+/* background-color:yellow; */
+padding-top: 60px;
+
+}
+#title4{
+    width:100%;
+height:auto;
+/* background-color:grey; */
+overflow: hidden;
+margin-top: 10px;
+padding-top: 60px;
+}
+#title4 img{
+   width:70px;
+ margin-left: 30px;
+}
+.right .image{
+    width: 100%;  
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right img{
+    width: 100%;  
+    height: 100%;  
+    object-fit: cover;
+    margin-right: 100px;
+}
+.subtitle{
+    font-size: xx-large;
+font-stretch: expanded;
+font-weight: 200px;
+font-family:Georgia, 'Times New Roman', Times, serif;
+padding : 20px;
+}
+.smallletters{
+    font-size:larger;
+    font-weight: 70px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding:20px;
+    margin-left: 20px;
+    margin-top: 30px;
+
+}
+.heading{
+    position: absolute;
+    top: 200px;          /* Push it slightly down from the top */
+    left: 50%;          /* Center it horizontally */
+    transform: translateX(-55%); /* Adjust it to be centered */
+    
+    padding: 10px 20px;       
+    font-size: 48px;    /* Increase the font size */
+    font-family: 'Georgia', 'Times New Roman', Times, serif; /* Font style */
+    font-weight: bold;  /* Make it bold */
+    color:darkblue;
+    z-index: 10; 
+
+}
+.heading h2{
+   
+    letter-spacing: 30px;  
+    rotate: 90deg;
+}
+@media (max-width: 480px) {
+    .subtitle {
+        font-size: 1em;
+    }
+
+    .smallletters {
+        font-size: 0.9em;
+    }
+
+    #title4 img {
+        width: 50px;
+    }
+
+    .right img {
+        width: 100%;
+        height: auto;
+    }
+
+    .heading {
+        font-size: 28px;
+    }
+}
